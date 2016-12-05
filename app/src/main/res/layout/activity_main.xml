@@ -1,17 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:padding="16dp"
     tools:context="ir.adicom.app.checkmanagmentapp.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
-</RelativeLayout>
+    <LinearLayout
+        android:layout_weight="0.7"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:paddingTop="50dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:visibility="invisible"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+            <Button
+                android:visibility="invisible"
+                android:layout_width="12dp"
+                android:layout_height="64dp" />
+            <ir.adicom.app.checkmanagmentapp.CircleButton
+                android:id="@+id/button0"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cb_text="ثبت چک"
+                app:cb_text_color="#FFF"
+                app:cb_text_size="20"
+                app:cb_color="@color/colorPrimary"
+                android:layout_weight="1" />
+            <ir.adicom.app.checkmanagmentapp.CircleButton
+                android:id="@+id/button1"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cb_text="مدیریت"
+                app:cb_text_color="#FFF"
+                app:cb_text_size="20"
+                app:cb_color="@color/colorPrimary"
+                android:layout_weight="1" />
+            <Button
+                android:visibility="invisible"
+                android:layout_width="64dp"
+                android:layout_height="64dp" />
+            <Button
+                android:visibility="invisible"
+                android:layout_width="12dp"
+                android:layout_height="64dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ir.adicom.app.checkmanagmentapp.CircleButton
+                android:id="@+id/button2"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                app:cb_text="گزارش"
+                app:cb_text_color="#FFF"
+                app:cb_text_size="20"
+                app:cb_color="@color/colorPrimary"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_weight="0.3"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+
+        <TextView
+            android:text="اخرین چک های رد شده :"
+            android:id="@+id/textview"
+            style="@style/textview_base" />
+        <TextView
+            style="@style/textview_base"
+            android:text="اخرین چک های نزدیک : "/>
+
+    </LinearLayout>
+
+</LinearLayout>
