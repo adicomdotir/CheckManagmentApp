@@ -106,5 +106,7 @@ public class CustomControl extends LinearLayout {
         return builder.toString();
     }
 
-
+    public String getText() {
+        return tvText.getText().toString();
+    }
 }

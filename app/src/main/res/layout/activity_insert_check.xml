@@ -18,7 +18,8 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:layout_weight="1"
-            android:hint="مبلغ چک به ریال" />
+            android:hint="مبلغ چک به ریال"
+            android:id="@+id/edtPrice" />
 
         <TextView
             android:textColor="#000"
@@ -42,7 +43,8 @@
             android:inputType="textPersonName"
             android:ems="10"
             android:layout_weight="1"
-            android:hint="در وجه" />
+            android:hint="در وجه"
+            android:id="@+id/edtVajhe" />
 
         <TextView
             android:textColor="#000"
@@ -65,7 +67,7 @@
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
             android:ems="10"
-            android:id="@+id/editText"
+            android:id="@+id/edtBabat"
             android:layout_weight="1"
             android:hint="بابت" />
 
