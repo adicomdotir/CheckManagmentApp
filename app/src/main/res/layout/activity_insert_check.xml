@@ -16,12 +16,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="مبلغ چک به ریال" />
 
         <TextView
-            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="مبلغ : "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -38,12 +40,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="در وجه" />
 
         <TextView
-            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="در وجه : "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
@@ -60,13 +64,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:inputType="textPersonName"
-            android:text="Name"
             android:ems="10"
             android:id="@+id/editText"
-            android:layout_weight="1" />
+            android:layout_weight="1"
+            android:hint="بابت" />
 
         <TextView
-            android:text="TextView"
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="بابت :‌ "
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/textView"
@@ -74,9 +80,71 @@
             android:gravity="right" />
     </LinearLayout>
 
-    <ir.adicom.app.checkmanagmentapp.CustomControl
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ir.adicom.app.checkmanagmentapp.CustomControl
+            android:id="@+id/custom_btn_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="/"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
+        <ir.adicom.app.checkmanagmentapp.CustomControl
+            android:id="@+id/custom_btn_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="#000"
+            android:text="/"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"/>
 
+        <ir.adicom.app.checkmanagmentapp.CustomControl
+            android:id="@+id/custom_btn_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+        </ir.adicom.app.checkmanagmentapp.CustomControl>
+
+        <TextView
+            android:textColor="#000"
+            android:textSize="18sp"
+            android:text="تاریخ چک : "
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="برگشت"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnBack"
+            android:layout_weight="0.3" />
+
+        <Button
+            android:text="ثبت"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnSubmit"
+            android:layout_weight="0.3" />
+    </LinearLayout>
 
 </LinearLayout>
